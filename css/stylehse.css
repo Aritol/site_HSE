@@ -1,0 +1,104 @@
+body {
+  font-family: Trebuchet MS , sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  min-width: 1100px;
+
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.main-header{
+	background-color: #D6D7B5;
+	padding-top: 1px;
+	padding-left: 15px;
+    padding-bottom: 80px;
+}
+.logo{
+	float: left;
+}
+
+.popular{
+	background-color:#CBD0B3;
+}
+.main-menu {
+  float: none;
+  width: 670px;
+  margin-top: 25px;
+  padding-left: 300px;
+}
+
+.main-menu li {
+  display:inline-block;
+
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Trebuchet MS;
+  padding-top: 15px;
+  background-color: #DA573C;
+}
+.main-menu li:last-child{
+  margin-right: 0;
+}
+.main-menu ul {
+  background-color: #CD9E4A;
+  margin:0;
+  padding:0px;
+  height: 53px;
+  list-style:none;
+}
+.main-menu li a
+{
+	   background-color: #DA573C;
+	   padding: 15px;
+	   padding-left: 30px;
+	   padding-right: 30px;
+   }
+.main-menu li a:hover {
+		 background-color:#E17152;
+	   }
+.main-menu li a:focus {
+	   background-color: red;
+}
+
+.header-top::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.header-top{
+  /*margin-bottom:93px;*/
+  height:75;
+}
+.promo{
+
+  min-height:395px;
+}
+.promo-greetings{
+  color: #575122;
+  font-size: 45px;
+  line-height: 50px;
+
+  font-weight: bold;
+  font-style: Trebuchet MS;
+  margin-bottom:35px;
+}
+.header-top a{
+  color:#575122;
+  text-decoration: none;
+  font-weight:bold;
+}
+.popular .promo-description{
+  color: #575122;
+  font-size: 18px;
+  line-height: 30px;
+  width:395px;
+  font-family: Tahoma;
+}
+.popular {
+  width:450px;
+  min-height:395px;
+}
