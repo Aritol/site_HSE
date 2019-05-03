@@ -2,7 +2,7 @@ body {
   font-family: Trebuchet MS , sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
+  color: #5d4037;
   margin: 0;
   padding: 0;
   min-width: 1100px;
@@ -11,57 +11,53 @@ body {
   background-position: center top;
 }
 .main-header{
-	background-color: #D6D7B5;
+	background-color: #ffcccb;
 	padding-top: 1px;
 	padding-left: 15px;
     padding-bottom: 80px;
 }
-.logo{
-	float: left;
-}
-
-.popular{
-	background-color:#CBD0B3;
-}
 .main-menu {
   float: none;
-  width: 670px;
+  width: 100%;
   margin-top: 25px;
-  padding-left: 300px;
 }
 
 .main-menu li {
   display:inline-block;
-
   vertical-align: top;
   font-size: 18px;
   line-height: 24px;
   font-family: Trebuchet MS;
   padding-top: 15px;
-  background-color: #DA573C;
+}
+.main-menu li:first-child{
+	padding-left: 25%;
+
 }
 .main-menu li:last-child{
   margin-right: 0;
 }
 .main-menu ul {
-  background-color: #CD9E4A;
-  margin:0;
+  background-color: #ef9a9a;
+   margin:0;
+  margin-left:5px;
+	 margin-right:20px;
   padding:0px;
   height: 53px;
   list-style:none;
 }
 .main-menu li a
 {
-	   background-color: #DA573C;
+	   background-color: #e57373;
 	   padding: 15px;
-	   padding-left: 30px;
-	   padding-right: 30px;
-   }
+	   padding-left: 60px;
+	   padding-right: 60px;
+ }
 .main-menu li a:hover {
-		 background-color:#E17152;
+		 background-color:#ffa4a2;
 	   }
 .main-menu li a:focus {
-	   background-color: red;
+	   background-color:#af4448;
 }
 
 .header-top::after {
@@ -74,11 +70,10 @@ body {
   height:75;
 }
 .promo{
-
   min-height:395px;
 }
 .promo-greetings{
-  color: #575122;
+  color: #5d4037;
   font-size: 45px;
   line-height: 50px;
 
@@ -86,19 +81,65 @@ body {
   font-style: Trebuchet MS;
   margin-bottom:35px;
 }
+.promo-cats{
+	border-radius: 60px;
+	float:right;
+	margin-right: 200px;
+}
 .header-top a{
-  color:#575122;
+  color:#5d4037;
   text-decoration: none;
   font-weight:bold;
 }
-.popular .promo-description{
-  color: #575122;
-  font-size: 18px;
-  line-height: 30px;
-  width:395px;
-  font-family: Tahoma;
-}
 .popular {
-  width:450px;
-  min-height:395px;
+  padding-top: 50px;
+  padding-bottom: 45px;
+  margin-top:0px;
+  background-color:#ef9a9a;
+  min-height: 50px;
+  padding-left: 200px;
+}
+
+.popular .container::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.block-popular {
+  float: left;
+  width: 320px;
+  margin-right: 30px;
+  text-align: center;
+  border: 5px solid #ba6b6c;
+  border-radius: 22px;
+  margin-left: 70px;
+  padding: 15px;
+  padding-top: 310px;
+  height:100px;
+}
+.block-popular a{
+  font-family: Trebuchet MS;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.block-popular .desc{
+  font-family: Tahoma;
+  font-size: 18px;
+    text-align: center;
+    color: #545454;
+    margin-top: 5px;
+}
+.block-popular:first-child{
+  background: url("../img/main-icon1.png") no-repeat 50% 0%;
+}
+.block-popular:nth-child(2){
+  background: url("../img/main-icon2.png") no-repeat 50% 0%;
+}
+.block-popular:last-child {
+  margin-right: 0;
+  background: url("../img/main-icon3.png") no-repeat 50% 0%;
 }
