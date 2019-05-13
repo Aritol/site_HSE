@@ -37,6 +37,11 @@ html {
 	padding-left: 15px;
     padding-bottom: 80px;
 }
+.main-header::after {
+  display: table;
+  clear: both;
+  content: "";
+}
 /*--------------MENU------------*/
 .main-menu {
   float: none;
@@ -248,3 +253,79 @@ html {
 	opacity: 0.3;
 }
 /*-------------SPISOK-----------*/
+.spisok{
+	border: 5px solid #ba6b6c;
+	border-radius: 10px;
+	width: 420px;
+	padding-right: 10px;
+	margin-left: 5px;
+	margin-top: 40px;
+	float:left;
+}
+.title-spisok{
+	font-family: Trebuchet MS;
+    font-size: 30px;
+
+}
+.spisok ul{
+	list-style:disc;
+}
+.spisok a{
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color:#5d4037;
+}
+.spisok a:hover
+{
+	text-decoration: underline;
+}
+.spisok a:active
+{
+	text-decoration: none;
+	opacity: 0.8;
+}
+.description{
+	margin-top: 50px;
+	margin-left: 500px
+}
+/*----------BREED------------*/
+
+.block-breed {
+  float: left;
+  width: 320px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 5px solid #ba6b6c;
+  border-radius: 22px;
+  background-color: white;
+  height:410px;
+}
+.block-breed a{
+  font-family: Trebuchet MS;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color:#5d4037;
+}
+
+.block-breed .desc{
+  font-family: Tahoma;
+  font-size: 18px;
+  text-align: center;
+  color: #545454;
+  margin-top: 5px;
+}
+.block-breed a:hover
+{
+	text-decoration: underline;
+}
+.block-breed a:active
+{
+	text-decoration: none;
+	opacity: 0.8;
+}
