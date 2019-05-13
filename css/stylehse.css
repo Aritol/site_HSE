@@ -13,6 +13,22 @@ body {
 html {
 	scroll-behavior: smooth;
 }
+.block-back{
+	background-color: black;
+	height: 100%;
+	width: 100px;
+	position: fixed;
+	opacity: 0.1;
+	transition: 0.3s;
+	background-image: url("../img/arrow.png");
+	background-repeat: no-repeat;
+	background-position: center 20px;
+
+}
+.block-back:hover{
+  transition: 0.3s;
+  opacity: 0.2;
+}
 .container {
   width: 1195px;
   margin: 0 auto;
@@ -55,6 +71,7 @@ html {
   line-height: 24px;
   font-family: Trebuchet MS;
   padding-top: 15px;
+
 }
 .main-menu li:first-child{
 	padding-left: 0%;
@@ -71,6 +88,7 @@ html {
   padding:0px;
   height: 53px;
   list-style:none;
+
 }
 .main-menu li a
 {
@@ -78,9 +96,12 @@ html {
 	   padding: 15px;
 	   padding-left: 80px;
 	   padding-right: 80px;
+	   transition: 0.3s;
+
  }
 .main-menu li a:hover {
 		 background-color:#ffa4a2;
+		
 	   }
 .main-menu li a:focus {
 	   background-color:#af4448;
