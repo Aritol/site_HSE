@@ -333,13 +333,13 @@ html {
   height:410px;
 }
 .block-breed a{
+  transition: 0.3s;
   font-family: Trebuchet MS;
   font-size: 22px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   color:#5d4037;
-  transition: 0.3s;
 }
 
 .block-breed .desc{
@@ -357,4 +357,44 @@ html {
 {
 	text-decoration: none;
 	opacity: 0.8;
+}
+/*------------CATS---------------*/
+.img-cats{
+	float: right;
+	border-radius: 20px;
+	margin-right: 50px;
+	margin-top: 50px;
+}
+.cats h2{
+	margin-left: 10px;
+}
+.cats h1{
+	margin-left: 10px;
+}
+.characteristic-cats-table,
+.characteristic-cats-table td{
+	border: 5px solid #ba6b6c;
+	margin-left: 20px;
+}
+.characteristic-cats-table
+{
+	border-collapse: collapse;
+	padding: 2px;
+}
+.characteristic-cats-table td
+{
+	padding:20px;
+	width:200px;
+}
+.description-cats {
+  padding-top: 50px;
+  padding-bottom: 45px;
+  margin-top:0px;
+  background-color:#ef9a9a;
+  min-height: 50px;
+  padding-left: 50px;
+
+}
+.description-cats p{
+	width: 1100px;
 }
