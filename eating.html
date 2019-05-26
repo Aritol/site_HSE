@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+    	<title>Сайт о котиках</title>
+      <!-- подключение css из папки -->
+        <link rel="stylesheet" href="css/stylehse.css">
+		<script type="text/javascript">
+			function find_feed()
+			{
+				var cat_breed = document.breed-select.item-breed-from.selectedIndex;
+				var cat_age = document.age-select.item-age-from.selectedIndex;
+
+				var common-1m-6m = "Корм MOTHER&BABYCAT <img src="img/feed/1-4.png">"
+				var common-6m-12m-souce = "KITTEN INSTINCTIVE (В СОУСЕ) <img src="img/feed/6-12-souce.png">"
+				var common-6m-12m = "KITTEN <img src="img/feed/6-12.png">"
+				var common-1g-7g = "INDOOR 27 <img src="img/feed/1g-7g.png">"
+				var common-1g-7g-LH = "INDOOR LONG HAIR <img src="img/feed/1g-7g-LH.png">"
+				var uncommon-1g-7g = "FIT 32 <img src="img/feed/1g-7g-fit.png">"
+				var common-7g = "INDOOR 7+ <img src="img/feed/7g+.png">"
+				var common-7g-souce = "INSTINCTIVE +7 (В СОУСЕ) <img src="img/feed/7g+souce.png">"
+				var bengal-adult = "BENGAL ADULT <img src="img/feed/bengal-adult.png">"
+				var british-shorthair-kitten-12m = "BRITISH SHORTHAIR KITTEN <img src="img/feed/british-shorthair-kitten-12m.png">"
+				var british-shorthair-souce = "BRITISH SHORTHAIR ADULT (В СОУСЕ) <img src="img/feed/british-shorthair-souce.png">"
+				var british-shorthair-adult = "BRITISH SHORTHAIR ADULT <img src="img/feed/british-shorthair-adult.png">"
+				var sfinks-kitten = "SPHYNX KITTEN <img src="img/feed/sfinks-kitten.png">"
+				var sfinks-adult = "SPHYNX ADULT <img src="img/feed/sfinks-adult.png">"
+				var mc-kitten-souce = "MAINE COON KITTEN (В СОУСЕ) <img src="img/feed/mc-kitten-souce.png">"
+				var mc-adult-souce = "MAINE COON ADULT (В СОУСЕ) <img src="img/feed/mc-adult-souce.png">"
+				var mc-adult = "MAINE COON ADULT <img src="img/feed/mc-adult.png">"
+				var mc-kitten = "MAINE COON KITTEN <img src="img/feed/mc-kitten.png">"
+				var persian-adult = "PERSIAN ADULT <img src="img/feed/persian-adult.png">"
+				var persian-kitten = "PERSIAN KITTEN <img src="img/feed/persian-kitten.png">"
+				var persian-adult-souce = "ADULT PERSIAN (В ПАШТЕТЕ) <img src="img/feed/persian-adult-souce.png">"
+				var siamese_adult = "SIAMESE ADULT <img src="img/feed/siamese_adult.png">"
+				var siberian-adult = "SIBERIAN ADULT <img src="img/feed/siberian-adult.png">"
+				document.getElementById('text').innerHTML = common-1m-6m;
+
+			}
+		</script>
+
+</head>
+
+<body id="preload">
+	<a href="#" class="block-back"></a>
+	<header class="main-header">
+
+    	<div class="container">
+			<div class="header-top">
+				<a href="main.html" class="logo">
+					<img src="img/logo1.png" width="120" height="120" alt="Кошачий мир" class="logo-img">
+					<h1>Кошачий мир</h1>
+				</a>
+				<div class="main-menu">
+					<ul>
+						<li><a href="main.html">Главная</a></li>
+						<li><a href="breed.html">Породы</a></li>
+						<li><a style="background-color:#af4448; href="#">Питание</a></li>
+						<li><a href="#">Имена</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="promo">
+
+				<form name="breed-select">
+					<select name="item-breed-form" size = 22>
+						<option value="abissinskaya">Абиссинская</option>
+						<option value="amerikanskaya_korotkosherstnaya">Американская короткошерстная</option>
+						<option value="bambino">Бамбино</option>
+						<option value="bengalskaya">Бенгальская</option>
+						<option value="britanskaya_dlinnosherstnaya">Британская длинношерстная</option>
+						<option value="britanskaya_korotkosherstnaya">Британская короткошерстная</option>
+						<option value="donsk-sfinks">Донской сфинкс</option>
+						<option value="egipetskaya_mau">Египетская Мау</option>
+						<option value="evropeyskaya_korotkosherstnaya">Европейская короткошерстная</option>
+						<option value="kanad-sfinks">Канадский сфинкс</option>
+						<option value="manchkin">Манчкин</option>
+						<option value="meyn_kun">Мейн кун</option>
+						<option value="nevskaya_maskaradnaya">Невская маскарадная</option>
+						<option value="persidskaya">Персидская</option>
+						<option value="peterb-sfinks">Петербургский сфинкс</option>
+						<option value="russkaya_golubaya">Русская голубая</option>
+						<option value="shotlandskaya_pryamoukhaya">Скоттиш-страйт (шотландская прямоухая)</option>
+						<option value="siamskaya">Сиамская</option>
+						<option value="sibirskaya">Сибирская</option>
+						<option value="somaliyskaya">Сомалийская</option>
+						<option value="tayskaya">Тайская</option>
+						<option value="yorkskaya_shokoladnaya">Йоркская шоколадная</option>
+					</select>
+				</form>
+				<form name="age-select">
+					<select name="item-age-form" size=4>
+						<option value="0m-6m">До 6 месяцев</option>
+						<option value="6m-1g">От 6 до 12 месяцев</option>
+						<option value="1g-7g">От 1 года до 7 лет</option>
+						<option value="7g+">Страше 7 лет</option>
+					</select>
+				</form>
+				<form name="button-select">
+					<input type="button" name="knopka" value="принять" onClick="find_feed(); location.href='#text'">
+				</form>
+		
+
+			</div>
+		</div>
+    </header>
+	<div class="popular">
+		<h2>Популярные категории</h2>
+		 	<div class="container">
+				<div class="block-popular">
+					<a href="#" class="cell-popular1">
+						<img src="img/main-icon1.png" width = "320" height="290" class="img-popular">
+							Британская короткошерстная
+					</a>
+					<div class="desc"><p>Дружелюбный компаньон в плюшевом одеянии</p></div>
+				</div>
+				<div class="block-popular">
+					<a href="#" class="cell-popular2">
+						<img src="img/main-icon2.png" width = "320" height="290" class="img-popular">
+							Как кормить Мейн-куна
+					</a>
+					<div class="desc"><p>Дружелюбный гигант с независимым характером</p></div>
+				</div>
+				<div class="block-popular">
+					<a href="#" class="cell-popular3">
+						<img src="img/main-icon3.png" width = "320" height="290" class="img-popular">
+							Скоттиш-страйт (шотландская прямоухая)
+					</a>
+					<div class="desc">Верная красавица с дружелюбным взглядом</div>
+				</div>
+			</div>
+	</div>
+	<footer class="main-footer">
+      <div class="container">
+		  <a href="#">
+        	<div class="footer-top">
+          		<div class="footer-address">
+            		<div class="logo-footer">
+              			<img src="img/logo1.png" width="121" height="121" alt="Кошачий мир">
+            		</div>
+            		<h3>Кошачий мир</h3>
+          		</div>
+        	</div>
+		</a>
+        <div class="footer-bottom">
+          <div class="footer-social">
+            <a href="https://vk.com" target="_blank">
+				<img src="img/vk-logo.png"  width= "42px" height= "42px" class="social-btn"><h5>Мы в Вконтакте</h5></a>
+            <a href="https://www.facebook.com/" target="_blank">
+				<img src="img/facebook-logo.png"  width= "42px" height= "42px" class="social-btn"><h5>Мы на Фейсбуке</h5></a>
+            <a href="https://www.instagram.com/" target="_blank">
+				<img src="img/instagram-logo.png"  width= "42px" height= "42px" class="social-btn"><h5>Мы в Инстаграме</h5></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+	<script>$("body").removeAttr("preload");</script>
+
+
+
+</body>
+</html>
