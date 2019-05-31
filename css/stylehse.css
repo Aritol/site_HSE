@@ -7,6 +7,7 @@ body {
   padding: 0;
   min-width: 1100px;
 
+
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -58,6 +59,7 @@ html {
 	padding-top: 1px;
 	padding-left: 15px;
     padding-bottom: 80px;
+    min-height: 690px;
 }
 .main-header::after {
   display: table;
@@ -399,12 +401,20 @@ html {
 	width: 1100px;
 }
 /*-----------answer--------------*/
+.form-ask{
+
+  margin-top: 20px;
+  margin-left: 10px;
+  float:left;
+}
 .answer div{
   display:inline-block;
   padding-right: 30px;
 }
 .answer {
-    margin: 100px;
+    margin-left: 10px;
+    margin-top: 20px;
+    display:inline-block;
 }
 /*---------NAMES-------------*/
 .names-girls{
