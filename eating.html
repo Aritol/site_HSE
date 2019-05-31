@@ -8,33 +8,128 @@
 		<script type="text/javascript">
 			function find_feed()
 			{
-				var cat_breed = document.breed-select.item-breed-from.selectedIndex;
-				var cat_age = document.age-select.item-age-from.selectedIndex;
+				var cat_breed = document.breed_select.item_breed_form.selectedIndex;
+				var cat_age = document.age_select.item_age_form.selectedIndex;
+				var common_1m_6m = "<img src='img/feed/1-4.png' width = '150px' height = '300px'> <br> Корм MOTHER&BABYCAT"
+				var common_6m_12m_souce = "<img src='img/feed/6-12-souce.png' width = '150px' height = '300px'> <br> KITTEN INSTINCTIVE (В СОУСЕ)"
+				var common_6m_12m = "<img src='img/feed/6-12.png' width = '150px' height = '300px'> <br> KITTEN"
+				var common_1g_7g = "<img src='img/feed/1g-7g.png' width = '150px' height = '300px'> <br> INDOOR 27"
+				var common_1g_7g_LH = "<img src='img/feed/1g-7g-LH.png' width = '150px' height = '300px'> <br> INDOOR LONG HAIR"
+				var uncommon_1g_7g = " <img src='img/feed/1g-7g-fit.png' width = '150px' height = '300px'> <br> FIT 32"
+				var common_7g = "<img src='img/feed/7g+.png' width = '150px' height = '300px'> <br> INDOOR 7+ "
+				var common_7g_souce = "<img src='img/feed/7g+souce.png' width = '150px' height = '300px'> <br> INSTINCTIVE +7 (В СОУСЕ)"
 
-				var common-1m-6m = "Корм MOTHER&BABYCAT <img src="img/feed/1-4.png">"
-				var common-6m-12m-souce = "KITTEN INSTINCTIVE (В СОУСЕ) <img src="img/feed/6-12-souce.png">"
-				var common-6m-12m = "KITTEN <img src="img/feed/6-12.png">"
-				var common-1g-7g = "INDOOR 27 <img src="img/feed/1g-7g.png">"
-				var common-1g-7g-LH = "INDOOR LONG HAIR <img src="img/feed/1g-7g-LH.png">"
-				var uncommon-1g-7g = "FIT 32 <img src="img/feed/1g-7g-fit.png">"
-				var common-7g = "INDOOR 7+ <img src="img/feed/7g+.png">"
-				var common-7g-souce = "INSTINCTIVE +7 (В СОУСЕ) <img src="img/feed/7g+souce.png">"
-				var bengal-adult = "BENGAL ADULT <img src="img/feed/bengal-adult.png">"
-				var british-shorthair-kitten-12m = "BRITISH SHORTHAIR KITTEN <img src="img/feed/british-shorthair-kitten-12m.png">"
-				var british-shorthair-souce = "BRITISH SHORTHAIR ADULT (В СОУСЕ) <img src="img/feed/british-shorthair-souce.png">"
-				var british-shorthair-adult = "BRITISH SHORTHAIR ADULT <img src="img/feed/british-shorthair-adult.png">"
-				var sfinks-kitten = "SPHYNX KITTEN <img src="img/feed/sfinks-kitten.png">"
-				var sfinks-adult = "SPHYNX ADULT <img src="img/feed/sfinks-adult.png">"
-				var mc-kitten-souce = "MAINE COON KITTEN (В СОУСЕ) <img src="img/feed/mc-kitten-souce.png">"
-				var mc-adult-souce = "MAINE COON ADULT (В СОУСЕ) <img src="img/feed/mc-adult-souce.png">"
-				var mc-adult = "MAINE COON ADULT <img src="img/feed/mc-adult.png">"
-				var mc-kitten = "MAINE COON KITTEN <img src="img/feed/mc-kitten.png">"
-				var persian-adult = "PERSIAN ADULT <img src="img/feed/persian-adult.png">"
-				var persian-kitten = "PERSIAN KITTEN <img src="img/feed/persian-kitten.png">"
-				var persian-adult-souce = "ADULT PERSIAN (В ПАШТЕТЕ) <img src="img/feed/persian-adult-souce.png">"
-				var siamese_adult = "SIAMESE ADULT <img src="img/feed/siamese_adult.png">"
-				var siberian-adult = "SIBERIAN ADULT <img src="img/feed/siberian-adult.png">"
-				document.getElementById('text').innerHTML = common-1m-6m;
+				var bengal_adult = "<img src='img/feed/bengal-adult.png' width = '150px' height = '300px'> <br> BENGAL ADULT "
+				var british_shorthair_kitten_12m = "<img src='img/feed/british-shorthair-kitten-12m.png' width = '150px' height = '300px'> <br> BRITISH SHORTHAIR KITTEN"
+		  	var british_shorthair_souce = "<img src='img/feed/british-shorthair-souce.png' width = '150px' height = '300px'> <br> BRITISH SHORTHAIR ADULT (В СОУСЕ)"
+				var british_shorthair_adult = "<img src='img/feed/british-shorthair-adult.png' width = '150px' height = '300px'> <br> BRITISH SHORTHAIR ADULT"
+				var sfinks_kitten = "<img src='img/feed/sfinks-kitten.png' width = '150px' height = '300px'> <br> SPHYNX KITTEN"
+				var sfinks_adult = "<img src='img/feed/sfinks-adult.png' width = '150px' height = '300px'> <br> SPHYNX ADULT"
+				var mc_kitten_souce = "<img src='img/feed/mc-kitten-souce.png' width = '150px' height = '300px'> <br> MAINE COON KITTEN (В СОУСЕ)"
+				var mc_adult_souce = "<img src='img/feed/mc-adult-souce.png' width = '150px' height = '300px'> <br> MAINE COON ADULT (В СОУСЕ)"
+				var mc_adult = "<img src='img/feed/mc-adult.png' width = '150px' height = '300px'> <br> MAINE COON ADULT"
+				var mc_kitten = "<img src='img/feed/mc-kitten.png' width = '150px' height = '300px'> <br> MAINE COON KITTEN"
+				var persian_adult = "<img src='img/feed/persian-adult.png' width = '150px' height = '300px'> <br> PERSIAN ADULT"
+				var persian_kitten = "<img src='img/feed/persian-kitten.png' width = '150px' height = '300px'> <br> PERSIAN KITTEN"
+				var persian_adult_souce = "<img src='img/feed/persian-adult-souce.png' width = '220px' height = '300px'> <br> ADULT PERSIAN (В ПАШТЕТЕ)"
+				var siamese_adult = "<img src='img/feed/siamese_adult.png' width = '150px' height = '300px'> <br> SIAMESE ADULT"
+				var siberian_adult = "<img src='img/feed/siberian-adult.png' width = '150px' height = '300px'> <br> SIBERIAN ADULT"
+
+
+				if(cat_age==0)
+				{
+							document.getElementById("text1").innerHTML = common_1m_6m;
+							document.getElementById("text_s").innerHTML = "";
+							document.getElementById("text2").innerHTML = "";
+							document.getElementById("text3").innerHTML = "";
+				}
+				if(cat_age==1)
+				{
+							document.getElementById("text1").innerHTML = common_6m_12m;
+							document.getElementById("text_s").innerHTML = common_6m_12m_souce;
+							document.getElementById("text2").innerHTML = "";
+							document.getElementById("text3").innerHTML = "";
+				}
+				if(cat_age==2 && (cat_breed ==4 || cat_breed ==11 || cat_breed == 12 || cat_breed == 13 || cat_breed == 18 || cat_breed == 19 || cat_breed == 21 ))
+				{
+							document.getElementById("text1").innerHTML = common_1g_7g_LH;
+							document.getElementById("text_s").innerHTML = uncommon_1g_7g;
+							document.getElementById("text2").innerHTML = "";
+							document.getElementById("text3").innerHTML = "";
+				}
+				else
+				{
+					if(cat_age==2) {
+							document.getElementById("text1").innerHTML = common_1g_7g;
+							document.getElementById("text_s").innerHTML = uncommon_1g_7g;
+							document.getElementById("text2").innerHTML = "";
+							document.getElementById("text3").innerHTML = "";
+						}
+				}
+				if(cat_age == 3)
+				{
+							document.getElementById("text1").innerHTML = common_7g;
+							document.getElementById("text_s").innerHTML = common_7g_souce;
+							document.getElementById("text2").innerHTML = "";
+							document.getElementById("text3").innerHTML = "";
+				}
+
+				if(cat_breed == 3 && (cat_age == 2 || cat_age == 3))
+				{
+							document.getElementById("text2").innerHTML = bengal_adult;
+							document.getElementById("text3").innerHTML = "";
+				}
+				if(cat_breed == 5 && (cat_age == 0 || cat_age==1))
+				{
+							document.getElementById("text2").innerHTML = british_shorthair_kitten_12m;
+							document.getElementById("text3").innerHTML = "";
+				}
+				if(cat_breed == 5 && (cat_age == 2 || cat_age==3))
+				{
+							document.getElementById("text2").innerHTML = british_shorthair_adult;
+							document.getElementById("text3").innerHTML = british_shorthair_souce;
+				}
+				if((cat_breed == 2 || cat_breed == 6 || cat_breed == 9 || cat_breed == 14) && cat_age==1)
+				{
+							document.getElementById("text2").innerHTML = sfinks_kitten;
+							document.getElementById("text3").innerHTML = "";
+				}
+				if((cat_breed == 2 || cat_breed == 6 || cat_breed == 9 || cat_breed == 14) && (cat_age == 2 || cat_age == 3))
+				{
+							document.getElementById("text2").innerHTML = sfinks_adult;
+							document.getElementById("text3").innerHTML = "";
+				}
+				if(cat_breed == 11 && cat_age == 1)
+				{
+							document.getElementById("text2").innerHTML = mc_kitten;
+							document.getElementById("text3").innerHTML = mc_kitten_souce;
+				}
+				if(cat_breed == 11 && (cat_age == 2 || cat_age == 3))
+				{
+							document.getElementById("text2").innerHTML = mc_adult;
+							document.getElementById("text3").innerHTML = mc_adult_souce;
+				}
+				if(cat_breed == 13 && (cat_age == 2 || cat_age == 3))
+				{
+							document.getElementById("text2").innerHTML = persian_adult;
+							document.getElementById("text3").innerHTML = persian_adult_souce;
+				}
+				if(cat_breed == 13 && cat_age == 1)
+				{
+							document.getElementById("text2").innerHTML = persian_kitten;
+							document.getElementById("text3").innerHTML = "";
+				}
+				if(cat_breed == 17 && (cat_age == 2 || cat_age == 3))
+				{
+							document.getElementById("text2").innerHTML = siamese_adult;
+							document.getElementById("text3").innerHTML = "";
+				}
+				if(cat_breed == 18 && (cat_age == 2 || cat_age == 3))
+				{
+							document.getElementById("text2").innerHTML = siberian_adult;
+							document.getElementById("text3").innerHTML = "";
+				}
+
 
 			}
 		</script>
@@ -46,6 +141,7 @@
 	<header class="main-header">
 
     	<div class="container">
+				<div class = "cat-ans">
 			<div class="header-top">
 				<a href="main.html" class="logo">
 					<img src="img/logo1.png" width="120" height="120" alt="Кошачий мир" class="logo-img">
@@ -55,7 +151,7 @@
 					<ul>
 						<li><a href="main.html">Главная</a></li>
 						<li><a href="breed.html">Породы</a></li>
-						<li><a style="background-color:#af4448; href="#">Питание</a></li>
+						<li><a style="background-color:#af4448; href="#"">Питание</a></li>
 						<li><a href="#">Имена</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
@@ -63,8 +159,8 @@
 			</div>
 			<div class="promo">
 
-				<form name="breed-select">
-					<select name="item-breed-form" size = 22>
+				<form name="breed_select">
+					<select name="item_breed_form" size = 22>
 						<option value="abissinskaya">Абиссинская</option>
 						<option value="amerikanskaya_korotkosherstnaya">Американская короткошерстная</option>
 						<option value="bambino">Бамбино</option>
@@ -89,48 +185,30 @@
 						<option value="yorkskaya_shokoladnaya">Йоркская шоколадная</option>
 					</select>
 				</form>
-				<form name="age-select">
-					<select name="item-age-form" size=4>
+				<form name="age_select">
+					<select name="item_age_form" size=4>
 						<option value="0m-6m">До 6 месяцев</option>
 						<option value="6m-1g">От 6 до 12 месяцев</option>
 						<option value="1g-7g">От 1 года до 7 лет</option>
 						<option value="7g+">Страше 7 лет</option>
 					</select>
 				</form>
-				<form name="button-select">
-					<input type="button" name="knopka" value="принять" onClick="find_feed(); location.href='#text'">
+				<form name="button_select">
+					<input type="button" name="knopka" onClick="find_feed();" value="принять" >
 				</form>
-		
-
+				<div class = "answer">
+					<div id="text1">	</div>
+					<div id="text2">	</div>
+					<div id="text3">	</div>
+					<div id="text_s">	</div>
+			 </div>
+	</div>
 			</div>
 		</div>
     </header>
-	<div class="popular">
-		<h2>Популярные категории</h2>
-		 	<div class="container">
-				<div class="block-popular">
-					<a href="#" class="cell-popular1">
-						<img src="img/main-icon1.png" width = "320" height="290" class="img-popular">
-							Британская короткошерстная
-					</a>
-					<div class="desc"><p>Дружелюбный компаньон в плюшевом одеянии</p></div>
-				</div>
-				<div class="block-popular">
-					<a href="#" class="cell-popular2">
-						<img src="img/main-icon2.png" width = "320" height="290" class="img-popular">
-							Как кормить Мейн-куна
-					</a>
-					<div class="desc"><p>Дружелюбный гигант с независимым характером</p></div>
-				</div>
-				<div class="block-popular">
-					<a href="#" class="cell-popular3">
-						<img src="img/main-icon3.png" width = "320" height="290" class="img-popular">
-							Скоттиш-страйт (шотландская прямоухая)
-					</a>
-					<div class="desc">Верная красавица с дружелюбным взглядом</div>
-				</div>
-			</div>
-	</div>
+
+
+
 	<footer class="main-footer">
       <div class="container">
 		  <a href="#">

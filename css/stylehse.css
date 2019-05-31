@@ -398,3 +398,34 @@ html {
 .description-cats p{
 	width: 1100px;
 }
+/*-----------answer--------------*/
+.answer div{
+  display:inline-block;
+  padding-right: 30px;
+}
+.answer {
+    margin: 100px;
+}
+/*---------NAMES-------------*/
+.names-girls{
+  width:500px;
+  margin-right: 60px;
+  float:right;
+  margin-top: -20px;
+}
+.names-boys{
+  width:500px;
+  margin-left: 20px;
+}
+/*
+
+
+
+
+
+
+
+
+
+
+*/
