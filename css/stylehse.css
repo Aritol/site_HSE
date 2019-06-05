@@ -434,15 +434,38 @@ html {
   border: 5px solid #ba6b6c;
   border-radius: 22px;
 }
-/*
+/*--------------CONTACTS------------------*/
+.contact-table,
+.contact-table td{
+	border: 5px solid #ba6b6c;
+	margin-left: 20px;
+}
+.contact-table
+{
+	border-collapse: collapse;
+	padding: 2px;
+  margin-top: 40px;
+  background-image:url("../img/bg-color.png");
+  background-repeat: repeat;
+}
+.contact-table td
+{
 
-
-
-
-
-
-
-
-
-
-*/
+	padding:20px;
+	width:200px;
+}
+.contact-table a{
+  transition: 0.3s;
+  font-family: Trebuchet MS;
+  text-align: center;
+  text-decoration: none;
+  color:#5d4037;
+}
+.contact-table a:hover
+{
+	text-decoration: underline;
+}
+.contact-table a:active
+{
+	text-decoration: none;
+}
